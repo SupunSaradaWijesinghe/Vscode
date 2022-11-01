@@ -3,6 +3,7 @@ from flask import Flask, escape, request, render_template
 import numpy as np
 import xgboost as xgb
 
+
 import pickle
 model = pickle.load(open('xgboost_model.pkl', 'rb'))
 
